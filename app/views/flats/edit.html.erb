@@ -1,0 +1,9 @@
+<h1>Edit flat</h1>
+<%= simple_form_for @flat do |f| %>
+  <%= f.input :name, required: false %>
+  <%= f.input :address, required: false %>
+  <%= f.input :description, required: false %>
+  <%= f.input :price_per_night, required: false %>
+  <%= f.input :number_of_guests, required: false %>
+  <%= f.button :submit %>
+<% end %>

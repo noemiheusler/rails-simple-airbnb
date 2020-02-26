@@ -1,0 +1,26 @@
+<div class="card-trip">
+  <img src="https://images.unsplash.com/photo-1464890100898-a385f744067f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
+  <div class="card-trip-infos">
+    <div>
+      <h2><%=@flat.name%></h2>
+      <p><%=@flat.description%></p>
+    </div>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  </div>
+</div>
+
+<div>
+  <h2>A bit more about this flat...</h2>
+  <p><%= @flat.description %></p>
+</div>
+
+<div>
+  <%= link_to "All Flats  ", flats_path%>
+  <%= link_to "Edit  ", edit_flat_path(@flat) %>
+  <%= link_to "Remove",  flat_path(@flat)%>
+</div>
+
+
+
+
+
